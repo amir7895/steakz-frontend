@@ -1,0 +1,42 @@
+/* Inventory Page Styles */
+.inventory-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.inventory-table th, .inventory-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.inventory-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.inventory-row {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inventory-row:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.low-stock {
+  background: #ffe5e5;
+  color: #b30000;
+}

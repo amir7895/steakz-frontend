@@ -1,0 +1,154 @@
+/* Luxurious Feedback Page Styles for Steakz */
+.feedback-main {
+  max-width: 540px;
+  margin: 2.5rem auto;
+  background: #fff8f3;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 30, 10, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+.feedback-main h1 {
+  color: #7b3f00;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.feedback-intro {
+  color: #a86b2d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.feedback-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: #7b3f00;
+  font-weight: 500;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #e0c9b2;
+  border-radius: 7px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #4d2c0c;
+}
+.feedback-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.feedback-error {
+  color: #b00020;
+  background: #ffeaea;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.feedback-success {
+  color: #1b7b3f;
+  background: #eaffea;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.feedback-submit {
+  width: 100%;
+  background: linear-gradient(90deg, #a86b2d 60%, #7b3f00 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  padding: 0.9em 0;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.feedback-submit:hover {
+  background: linear-gradient(90deg, #7b3f00 60%, #a86b2d 100%);
+}
+.feedback-info {
+  margin-top: 2.5rem;
+  background: #fff6ee;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  color: #4d2c0c;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(60, 30, 10, 0.04);
+}
+.feedback-info h2 {
+  color: #a86b2d;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+}
+.feedback-info ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.feedback-info li {
+  margin-bottom: 0.5em;
+}
+.feedback-list {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.feedback-card {
+  background: #fffdfa;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(120, 80, 30, 0.08);
+  padding: 1.3rem 1.2rem 1.1rem 1.2rem;
+  border: 1.2px solid #e0c9b2;
+  font-family: 'Georgia', serif;
+}
+.feedback-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.feedback-name {
+  color: #7b3f00;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.feedback-rating {
+  color: #ffd700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.feedback-message {
+  color: #4d2c0c;
+  font-size: 1.08rem;
+  margin-bottom: 0.5rem;
+}
+.feedback-date {
+  color: #a86b2d;
+  font-size: 0.98rem;
+  text-align: right;
+}
+.feedback-loading {
+  color: #a86b2d;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .feedback-main {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .feedback-info {
+    padding: 0.7rem 0.3rem;
+  }
+}

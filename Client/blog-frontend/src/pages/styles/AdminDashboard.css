@@ -1,0 +1,74 @@
+/* Admin Dashboard Page Styles for Steakz */
+.admin-dashboard-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff8f3;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 30, 10, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.admin-dashboard-page h1 {
+  color: #7b3f00;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.admin-section {
+  margin-bottom: 2rem;
+}
+.admin-section h2 {
+  color: #a86b2d;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+.admin-inventory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.admin-inventory-item {
+  background: #fff6ee;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #4d2c0c;
+  font-size: 1.05rem;
+}
+.admin-qty {
+  color: #a86b2d;
+  font-weight: 500;
+}
+.admin-financial {
+  background: #fff6ee;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  color: #4d2c0c;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.admin-sales {
+  color: #1b7b3f;
+  font-weight: 600;
+}
+.admin-expenses {
+  color: #b00020;
+  font-weight: 600;
+}
+.admin-profit {
+  color: #7b3f00;
+  font-weight: 700;
+}
+.admin-loading {
+  color: #a86b2d;
+  font-size: 1.1rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .admin-dashboard-page {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+}

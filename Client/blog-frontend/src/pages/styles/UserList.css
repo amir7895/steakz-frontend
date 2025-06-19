@@ -1,0 +1,15 @@
+.user-list {
+  display: grid;
+  gap: 20px;
+}
+
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h2 {
+  margin: 0 0 10px;
+}

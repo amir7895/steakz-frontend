@@ -1,0 +1,36 @@
+/* Financial Panel Styles */
+.financial-panel {
+  padding: 2rem;
+  background: #f4f8fb;
+}
+.financial-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+.financial-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.financial-table th, .financial-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.financial-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+.financial-row {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.financial-row:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+  cursor: pointer;
+}

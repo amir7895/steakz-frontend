@@ -1,0 +1,84 @@
+/* Employee Portal Page Styles for Steakz */
+.employee-portal-page {
+  max-width: 540px;
+  margin: 2rem auto;
+  background: #fff8f3;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 30, 10, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.employee-portal-page h1 {
+  color: #7b3f00;
+  font-size: 2.1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.employee-login-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: #7b3f00;
+  font-weight: 500;
+}
+.employee-login-form input[type="text"],
+.employee-login-form input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #e0c9b2;
+  border-radius: 7px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #4d2c0c;
+}
+.employee-error {
+  color: #b00020;
+  background: #ffeaea;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.employee-login-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #a86b2d 60%, #7b3f00 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  padding: 0.9em 0;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.employee-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.employee-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.employee-card {
+  background: #fff6ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(60, 30, 10, 0.04);
+  padding: 1.2rem 1rem;
+  color: #4d2c0c;
+}
+.employee-card h2 {
+  color: #a86b2d;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 600px) {
+  .employee-portal-page {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .employee-dashboard {
+    gap: 0.7rem;
+  }
+}

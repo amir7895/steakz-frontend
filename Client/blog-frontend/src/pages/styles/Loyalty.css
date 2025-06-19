@@ -1,0 +1,142 @@
+/* Loyalty Points Styles */
+.loyalty-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.loyalty-table th, .loyalty-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.points-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 12px;
+  padding: 0.2rem 0.8rem;
+}
+
+/* Loyalty Page Redesigned Styles */
+.loyalty-main {
+  font-family: 'Georgia', serif;
+  color: #333;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-filters {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loyalty-filters select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.loyalty-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-tier, .loyalty-points, .loyalty-next-tier {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.loyalty-rewards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.reward-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.reward-card:hover {
+  transform: scale(1.05);
+}
+
+.reward-card.claimed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.reward-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.reward-meta {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.reward-claim-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reward-claim-btn:hover {
+  background: #0056b3;
+}
+
+.reward-claimed {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.badge.claimed {
+  background: #28a745;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.loyalty-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.loyalty-info ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.loyalty-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
