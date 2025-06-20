@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { AuthResponse, Post, Comment, UsersResponse } from '../types';
 
-// Base URL from the API documentation
-const API_URL = 'http://localhost:3001'; // Explicitly set the backend URL
+// Use the environment variable for the API base URL
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001'; // Fallback to localhost for development
 
 // Create axios instance
 export const api = axios.create({
