@@ -58,78 +58,71 @@ export const login = async (credentials: {
 
 // Post APIs
 export const getAllPosts = async (): Promise<Post[]> => {
-  const response = await api.get('/api/posts');
+  const response = await api.get('/api/posts', { withCredentials: true });
   return response.data;
 };
 
 export const createPost = async (title: string, content: string): Promise<Post> => {
-  const response = await api.post('/api/posts', { title, content });
+  const response = await api.post('/api/posts', { title, content }, { withCredentials: true });
   return response.data;
 };
 
 // Comment APIs
 export const createComment = async (content: string, postId: number, userName?: string): Promise<Comment> => {
-  const response = await api.post('/api/comments', { content, postId, userName });
+  const response = await api.post('/api/comments', { content, postId, userName }, { withCredentials: true });
   return response.data;
 };
 
 // Admin APIs
 export const getAllUsers = async (page: number = 1, limit: number = 10): Promise<UsersResponse> => {
-  const response = await api.get(`/api/users?page=${page}&limit=${limit}`);
+  const response = await api.get(`/api/users?page=${page}&limit=${limit}`, { withCredentials: true });
   return response.data;
 };
 
 export const getUsers = async () => {
-  const response = await api.get('/api/users/public'); // Use the public route
+  const response = await api.get('/api/users/public', { withCredentials: true });
   return response.data;
 };
 
 // Order APIs
 export const getOrders = async () => {
-  const response = await api.get('/api/orders');
+  const response = await api.get('/api/orders', { withCredentials: true });
   return response.data;
 };
 
 export const createOrder = async (orderData: any) => {
-  console.log('createOrder function called with:', orderData); // Log the payload
-  try {
-    const response = await api.post('/api/orders/create', orderData);
-    console.log('API Response from createOrder:', response.data); // Log the response
-    return response.data;
-  } catch (error: any) {
-    console.error('Error in createOrder API call:', error.response?.data || error.message); // Log the error
-    throw new Error(error.response?.data?.error || 'Failed to create order');
-  }
+  const response = await api.post('/api/orders/create', orderData, { withCredentials: true });
+  return response.data;
 };
 
 export const updateOrder = async (id: number, orderData: any) => {
-  const response = await api.put(`/api/orders/${id}`, orderData);
+  const response = await api.put(`/api/orders/${id}`, orderData, { withCredentials: true });
   return response.data;
 };
 
 export const deleteOrder = async (id: number) => {
-  const response = await api.delete(`/api/orders/${id}`);
+  const response = await api.delete(`/api/orders/${id}`, { withCredentials: true });
   return response.data;
 };
 
 // Reservation APIs
 export const getReservations = async () => {
-  const response = await api.get('/api/reservations');
+  const response = await api.get('/api/reservations', { withCredentials: true });
   return response.data;
 };
 
 export const createReservation = async (reservationData: any) => {
-  const response = await api.post('/api/reservations', reservationData);
-  return response; // Return the full response object
+  const response = await api.post('/api/reservations', reservationData, { withCredentials: true });
+  return response.data;
 };
 
 export const updateReservation = async (id: number, reservationData: any) => {
-  const response = await api.put(`/api/reservations/${id}`, reservationData);
+  const response = await api.put(`/api/reservations/${id}`, reservationData, { withCredentials: true });
   return response.data;
 };
 
 export const deleteReservation = async (id: number) => {
-  const response = await api.delete(`/api/reservations/${id}`);
+  const response = await api.delete(`/api/reservations/${id}`, { withCredentials: true });
   return response.data;
 };
 
