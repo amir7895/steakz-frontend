@@ -14,7 +14,7 @@ const Login: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await login(username, password);
+      const response = await login({ email: username, password });
       authLogin(response.token, response.user);
       navigate('/');
     } catch (err: any) {

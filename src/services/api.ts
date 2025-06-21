@@ -26,14 +26,34 @@ api.interceptors.request.use((config) => {
 });
 
 // Authentication APIs
-export const signup = async (username: string, password: string): Promise<AuthResponse> => {
-  const response = await api.post('/auth/signup', { username, password });
-  return response.data;
+// ✅ Signup function
+export const signup = async (userData: {
+  name: string;
+  email: string;
+  password: string;
+  role?: string;
+}) => {
+  try {
+    const response = await axios.post(`${API_URL}/auth/signup`, userData, { withCredentials: true });
+    return response.data;
+  } catch (error: any) {
+    console.error('Signup failed:', error.response?.data || error.message);
+    throw error;
+  }
 };
 
-export const login = async (username: string, password: string): Promise<AuthResponse> => {
-  const response = await api.post('/auth/login', { username, password });
-  return response.data;
+// ✅ Login function
+export const login = async (credentials: {
+  email: string;
+  password: string;
+}) => {
+  try {
+    const response = await axios.post(`${API_URL}/auth/login`, credentials, { withCredentials: true });
+    return response.data;
+  } catch (error: any) {
+    console.error('Login failed:', error.response?.data || error.message);
+    throw error;
+  }
 };
 
 // Post APIs
